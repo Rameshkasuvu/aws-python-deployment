@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080d1b">
+  <meta name="description" content="A modern, responsive technology landing page built with Flask.">
+  <title>Nexora — Build what's next</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Nexora home">
+      <span class="brand-mark"><span></span><span></span><span></span></span>
+      <span>NEXORA<span class="brand-dot">.</span></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#solutions">Solutions</a>
+      <a href="#approach">Our approach</a>
+      <a href="#work">What we do</a>
+      <a class="nav-cta" href="#contact">Let's talk <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="status-dot"></span> DIGITAL PRODUCTS · CLOUD · ENGINEERING</div>
+        <h1>Build what's next.<br><span class="gradient-text">Make it matter.</span></h1>
+        <p class="hero-description">Thoughtful technology. Seamless experiences. Reliable systems built to help ambitious ideas move forward.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#solutions">Explore what we do <span>↗</span></a>
+          <a class="button button-quiet" href="#approach"><span class="play-icon">▶</span> Our approach</a>
+        </div>
+        <div class="hero-proof">
+          <div class="proof-avatars" aria-hidden="true"><span>N</span><span>X</span><span>+</span></div>
+          <p><strong>Ideas to impact</strong><br><span>One clear step at a time.</span></p>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" aria-label="Abstract technology illustration">
+        <div class="visual-orbit orbit-a"></div>
+        <div class="visual-orbit orbit-b"></div>
+        <div class="visual-orbit orbit-c"></div>
+        <div class="visual-core">
+          <div class="core-grid"></div>
+          <div class="core-symbol"><span></span><span></span><span></span></div>
+          <div class="core-label">NEXORA <span>CORE</span></div>
+        </div>
+        <div class="float-card card-top">
+          <span class="mini-icon blue-icon">↗</span>
+          <div><small>Momentum</small><strong>Forward, always</strong></div>
+        </div>
+        <div class="float-card card-bottom">
+          <span class="mini-icon violet-icon">✳</span>
+          <div><small>Built with intent</small><strong>Simple. Scalable.</strong></div>
+          <span class="live-pill">LIVE</span>
+        </div>
+        <div class="spark spark-one">✦</div><div class="spark spark-two">✧</div>
+      </div>
+    </section>
+
+    <section class="trust-strip section-wrap reveal">
+      <span class="strip-label">GOOD WORK STARTS WITH</span>
+      <div class="strip-item"><span class="strip-symbol">◈</span> Clarity</div>
+      <div class="strip-item"><span class="strip-symbol">⌘</span> Craft</div>
+      <div class="strip-item"><span class="strip-symbol">↗</span> Momentum</div>
+      <div class="strip-item"><span class="strip-symbol">◎</span> Reliability</div>
+    </section>
+
+    <section class="section-wrap section-block" id="solutions">
+      <div class="section-heading reveal">
+        <div><span class="eyebrow">WHAT WE BRING TO THE TABLE</span><h2>Complexity, meet <span class="gradient-text">clarity.</span></h2></div>
+        <p>From the first sketch to the final deployment, every detail should have a purpose.</p>
+      </div>
+      <div class="service-grid">
+        <article class="service-card reveal">
+          <div class="service-icon icon-blue">⌘</div><span class="card-index">01 / DIGITAL</span>
+          <h3>Digital experiences</h3><p>Clean interfaces and intuitive journeys that make every interaction feel effortless.</p>
+          <a href="#contact" class="text-link">Explore the possibilities <span>↗</span></a>
+          <div class="card-glow"></div>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-icon icon-violet">⌁</div><span class="card-index">02 / ENGINEERING</span>
+          <h3>Software engineering</h3><p>Thoughtful applications built around real needs, maintainable code, and room to grow.</p>
+          <a href="#contact" class="text-link">Build something useful <span>↗</span></a>
+          <div class="card-glow"></div>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-icon icon-cyan">☁</div><span class="card-index">03 / CLOUD</span>
+          <h3>Cloud & delivery</h3><p>Practical deployment workflows that help teams ship confidently and consistently.</p>
+          <a href="#contact" class="text-link">Move forward <span>↗</span></a>
+          <div class="card-glow"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="approach-section" id="approach">
+      <div class="section-wrap approach-layout">
+        <div class="approach-copy reveal">
+          <span class="eyebrow">A BETTER WAY FORWARD</span>
+          <h2>Good technology<br>feels <span class="gradient-text">simple.</span></h2>
+          <p>We start with the problem, focus on what matters, and build in thoughtful iterations. No unnecessary complexity. Just useful progress.</p>
+          <a class="button button-primary" href="#contact">Start a conversation <span>↗</span></a>
+        </div>
+        <div class="steps reveal">
+          <div class="step"><div class="step-number">01</div><div><h3>Discover</h3><p>Understand the goal, the people, and the real problem to solve.</p></div><span class="step-arrow">↗</span></div>
+          <div class="step"><div class="step-number">02</div><div><h3>Design</h3><p>Shape a clear experience before adding unnecessary complexity.</p></div><span class="step-arrow">↗</span></div>
+          <div class="step"><div class="step-number">03</div><div><h3>Deliver</h3><p>Build, test, and improve with quality and reliability in mind.</p></div><span class="step-arrow">↗</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-wrap work-section section-block" id="work">
+      <div class="work-panel reveal">
+        <div class="work-art">
+          <div class="work-window">
+            <div class="window-top"><i></i><i></i><i></i><span>project_overview</span></div>
+            <div class="window-content"><div class="code-line short"></div><div class="code-line long"></div><div class="code-line medium"></div><div class="code-line long blue-line"></div><div class="code-line short violet-line"></div><div class="code-line medium"></div><div class="window-chart"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
+          </div>
+          <div class="work-badge"><span>✦</span> Made for what's next</div>
+        </div>
+        <div class="work-copy">
+          <span class="eyebrow">BUILT WITH PURPOSE</span>
+          <h2>Make the next<br>move your <span class="gradient-text">best one.</span></h2>
+          <p>Every great result starts with a useful first step. Bring a challenge, an idea, or a rough sketch — and turn it into something real.</p>
+          <a class="text-link" href="#contact">Let's make it happen <span>↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="section-wrap contact-inner reveal">
+        <span class="eyebrow">YOUR NEXT CHAPTER STARTS HERE</span>
+        <h2>Have an idea?<br><span class="gradient-text">Let's give it shape.</span></h2>
+        <p>Tell us what you're working on. The best things start with a conversation.</p>
+        <a class="button button-primary" href="mailto:hello@example.com">Get in touch <span>↗</span></a>
+        <span class="contact-orb orb-left"></span><span class="contact-orb orb-right"></span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-wrap">
+    <a class="brand" href="#home"><span class="brand-mark"><span></span><span></span><span></span></span><span>NEXORA<span class="brand-dot">.</span></span></a>
+    <p>Thoughtful technology. Better possibilities.</p>
+    <a href="#home" class="back-top">Back to top ↑</a>
+    <span class="copyright">© <span id="year"></span> Nexora. Built with purpose.</span>
+  </footer>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
